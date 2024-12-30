@@ -3,24 +3,32 @@ const hamMenuOptions = document.querySelector(".menuList");
 let isHamMenuExtended = false;
 const windowWidth = window.innerWidth;
 
-console.log(windowWidth);
-console.log(isHamMenuExtended);
-
 function headerMenuDisplay() {
-  if (isHamMenuExtended === false && windowWidth < 700) {
+  if (isHamMenuExtended === false) {
     hamMenuOptions.style.display = "block";
     isHamMenuExtended = true;
-  }
-  // if (windowWidth < 700) {
-  //   hamMenuOptions.style.display = "flex";
-  //   isHamMenuExtended = true;
-  // }
-  if (isHamMenuExtended === true && windowWidth < 700) {
-    hamMenuOptions.style.display = "block";
-    isHamMenuExtended = false;
   } else {
-    hamMenuOptions.style.display = "flex";
+    hamMenuOptions.style.display = "none";
+    isHamMenuExtended = false;
   }
-}
 
+  // function wideScreenDisplay(windowWidth) {
+  //   if (windowWidth < 700)
+  //     windowWidth.hamMenuButton.addEventListener("change", windowWidth);
+  //   else {
+  //     hamMenuOptions.style.display = "flex";
+  //     isHamMenuExtended = false;
+  //     console.log(isHamMenuExtended);
+  //     console.log(windowWidth);
+  //   }
+  // }
+  // if (windowWidth < 700) {
+  //   headerMenuDisplay;
+  // } else {
+  //   hamMenuOptions.style.display = "flex";
+  //   isHamMenuExtended = false;
+  //   console.log(isHamMenuExtended);
+  //   console.log(windowWidth);
+  // }
+}
 hamMenuButton.addEventListener("click", headerMenuDisplay);
