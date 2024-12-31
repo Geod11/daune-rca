@@ -3,6 +3,10 @@ const hamMenuOptions = document.querySelector(".menuList");
 let isHamMenuExtended = false;
 const windowWidth = window.innerWidth;
 
+if (windowWidth < 700) {
+  hamMenuOptions.style.display = "none";
+}
+
 function headerMenuDisplay() {
   if (isHamMenuExtended === false) {
     hamMenuOptions.style.display = "block";
