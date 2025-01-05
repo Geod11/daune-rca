@@ -1,5 +1,6 @@
 body {
-  background-color: black;
+  /* background-color: black; */
+  background-color: rgb(156 163 175);
 }
 
 .header {
@@ -7,6 +8,9 @@ body {
   display: flex;
   /* justify-content: space-evenly; */
   align-items: center;
+  background-color: black;
+  border-radius: 10px;
+  /* margin-bottom: 10px; */
 
   /* justify-content: flex-start; */
   /* flex-wrap: wrap; */
@@ -20,6 +24,14 @@ body {
   /* width: 23em; */
   /* display: none; */
   list-style-type: none;
+  background-color: black;
+  border-radius: 0px 0px 15px 15px;
+}
+
+.menuList > ul {
+  margin: 0;
+  margin-top: -10px;
+  padding: 10px 0px;
 }
 
 .orangeText {
@@ -75,15 +87,22 @@ a {
 li {
   color: white;
   list-style: none;
-  padding: 0.3em;
+  padding: 0.5em;
+}
+
+li > a {
+  text-decoration: none;
+  font-size: 16px;
 }
 
 .fa {
-  margin-right: 0.5em;
+  margin-right: 1em;
+  font-size: 25px;
 }
 
 .mainContent {
   color: white;
+  margin-top: 15px;
 }
 
 .nameAndNumber p {
@@ -92,15 +111,18 @@ li {
 
 .menuList ul {
   padding-left: 1em;
+
   @media (min-width: 700px) {
     display: flex;
   }
 }
 
 i {
+  font-size: 16px;
   color: white;
   font-family: "FontAwesome" !important;
 }
+
 span {
   font-family: "FontAwesome" !important;
 }
@@ -108,10 +130,12 @@ span {
 .footer {
   background-color: white;
   color: black;
+  border-radius: 10px;
+  margin-top: 15px;
 }
 
 .footer ul {
-  padding-top: 7.5em;
+  padding-top: 1em;
 
   padding-inline-start: 0;
 }
@@ -123,20 +147,132 @@ span {
   color: black;
 }
 
-.grid-container {
+/* .grid-container {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto;
   gap: 10px;
   padding: 10px;
+} */
+
+.gridContainer {
+  @media (min-width: 450px) {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+  }
 }
 
-.grid-container > input {
+.gridContainer div {
+  padding: 5px;
+}
+
+/* .grid-container > input {
   background-color: #f1f1f1;
   text-align: center;
   padding: 20px 0;
   font-size: 30px;
-}
-.item1 {
+} */
+/* .item1 {
   grid-column-start: 1;
   grid-column-end: 3;
+} */
+
+form {
+  background-color: black;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+
+  /* background-color: rgb(156 163 175); */
+}
+
+.insurersAndServices {
+  color: black;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 15px;
+  text-align: center;
+  padding: 10px;
+}
+
+.inputFields {
+  font-family: "Courier New", Courier, monospace;
+  padding: 5px;
+  color: black;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+.submitButton {
+  background-color: rgb(249 115 22);
+  color: black;
+}
+
+.item5 {
+  grid-column: 1 / span 2;
+}
+
+.item5 > textarea {
+  width: 90%;
+  height: 160px;
+}
+
+.footerAddress {
+  padding: 1em;
+}
+
+.insurersAndServices h2 {
+  color: rgb(249 115 22);
+}
+
+.insurersAndServices img {
+  width: 90%;
+}
+
+.insurersAndServices button {
+  font-size: 20px;
+  background-color: rgb(249 115 22);
+  color: black;
+  border-radius: 10px;
+  /* border-style: double;
+  border-width: unset; */
+  border: none;
+  padding: 10px;
+}
+
+.insurersAndServices div {
+  border-bottom: solid;
+  border-width: 3px;
+  border-radius: 30px;
+  color: gray;
+  padding-bottom: 5px;
+}
+
+.serviciiHomePage {
+  background-color: black;
+  color: rgb(249 115 22);
+  text-align: center;
+  border-radius: 10px;
+}
+
+.serviciiHomePage i {
+  font-size: 20px;
+  color: rgb(249 115 22);
+}
+
+.serviciiHomePage h2 {
+  font-size: 30px;
+  padding: 25px;
+}
+
+.serviciiHomePage div {
+  font-size: 30px;
+  padding: 35px;
+  margin: 5px;
+  border: 2px;
+
+  border-color: rgb(249 115 22);
+  border-left-style: dotted;
+  border-right-style: dotted;
+  border-radius: 100px;
 }

@@ -2,10 +2,19 @@ const hamMenuButton = document.querySelector(".hamburgerMenu");
 const hamMenuOptions = document.querySelector(".menuList");
 let isHamMenuExtended = false;
 const windowWidth = window.innerWidth;
+const facebookElement = document.querySelector("#facebookElement");
 
 if (windowWidth < 700) {
   hamMenuOptions.style.display = "none";
 }
+
+// facebookElement.addEventListener(
+//   "click",
+//   window.open(
+//     "https://www.facebook.com/profile.php?id=61565389988489",
+//     "_blank"
+//   )
+// );
 
 function headerMenuDisplay() {
   if (isHamMenuExtended === false) {
