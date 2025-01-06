@@ -4,8 +4,9 @@ body {
 }
 
 .header {
-  width: 100%;
+  /* width: 95%; */
   display: flex;
+  padding: 10px;
   /* justify-content: space-evenly; */
   align-items: center;
   background-color: black;
@@ -45,7 +46,7 @@ body {
 .nameAndNumber {
   width: 100%;
   /* display: flex; */
-  padding: 1rem;
+  /* padding: 1rem; */
   /* margin-left: auto;
   margin-right: auto; */
 
@@ -128,6 +129,7 @@ span {
 }
 
 .footer {
+  text-align: center;
   background-color: white;
   color: black;
   border-radius: 10px;
@@ -269,10 +271,17 @@ form {
   font-size: 30px;
   padding: 35px;
   margin: 5px;
-  border: 2px;
+  border-left: 2px;
+  border-right: 2px;
+  border-top: none;
+  border-bottom: none;
 
   border-color: rgb(249 115 22);
   border-left-style: dotted;
   border-right-style: dotted;
   border-radius: 100px;
+}
+
+.footerNameAndNumber {
+  padding-top: 20px;
 }
