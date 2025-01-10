@@ -369,3 +369,18 @@ form {
   padding: 20px;
   text-align: justify;
 }
+
+.mainContactContent {
+  margin-top: 15px;
+  width: 100%;
+}
+
+.mainContactContent h2,
+h3 {
+  color: white;
+}
+
+iframe {
+  border: 15px solid black;
+  border-radius: 15px;
+}
