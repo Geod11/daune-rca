@@ -1,6 +1,7 @@
 body {
   /* background-color: black; */
   background-color: rgb(156 163 175);
+  font-family: Verdana, Geneva, Tahoma, sans-serifl;
 }
 
 .header {
@@ -329,7 +330,7 @@ form {
 }
 
 .quickActionsBarContainer div {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .phoneButton {
@@ -346,4 +347,25 @@ form {
 
 .chatButton {
   text-decoration: none;
+}
+
+.servicesContentContainer {
+  background-color: black;
+  color: white;
+  border-radius: 15px;
+}
+
+.servicesContentContainer h2 {
+  text-align: center;
+  padding-top: 35px;
+  padding-bottom: 10px;
+}
+
+.servicesContentContainer h3 {
+  text-align: center;
+}
+
+.servicesContentContainer p {
+  padding: 20px;
+  text-align: justify;
 }
