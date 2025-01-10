@@ -7,6 +7,7 @@ body {
   /* width: 95%; */
   display: flex;
   padding: 10px;
+  flex-wrap: wrap;
   /* justify-content: space-evenly; */
   align-items: center;
   background-color: black;
@@ -31,7 +32,7 @@ body {
 
 .menuList > ul {
   margin: 0;
-  margin-top: -10px;
+  /* margin-top: -10px; */
   padding: 10px 0px;
 }
 
@@ -44,7 +45,7 @@ body {
 }
 
 .nameAndNumber {
-  width: 100%;
+  width: 50%;
   /* display: flex; */
   /* padding: 1rem; */
   /* margin-left: auto;
@@ -83,6 +84,10 @@ a {
 
 .hamburgerMenu i {
   float: right;
+}
+
+.menuListContainer {
+  width: 90%;
 }
 
 li {
@@ -217,6 +222,10 @@ form {
 .item5 > textarea {
   width: 90%;
   height: 160px;
+}
+
+.item6 {
+  grid-column: 1 / span 2;
 }
 
 .footerAddress {

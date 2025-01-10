@@ -4,6 +4,13 @@ let isHamMenuExtended = false;
 const windowWidth = window.innerWidth;
 const facebookElement = document.querySelector("#facebookElement");
 
+const HeaderMobile = `
+
+`;
+const HeaderDesktop = `
+
+`;
+
 if (windowWidth < 700) {
   hamMenuOptions.style.display = "none";
 }
