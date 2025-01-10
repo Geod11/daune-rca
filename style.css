@@ -45,11 +45,12 @@ body {
 }
 
 .nameAndNumber {
-  width: 50%;
+  width: 100%;
   /* display: flex; */
   /* padding: 1rem; */
   /* margin-left: auto;
   margin-right: auto; */
+  text-align: center;
 
   @media (min-width: 700px) {
     width: 30%;
@@ -76,7 +77,15 @@ a {
 } */
 
 .hamburgerMenu {
-  width: 50%;
+  position: absolute;
+  /* top: 30px;
+  left: 30px;
+  text-align: center; */
+
+  top: 9%;
+  left: 91%;
+  transform: translate(-50%, -50%);
+
   @media (min-width: 700px) {
     display: none;
   }
@@ -87,7 +96,7 @@ a {
 }
 
 .menuListContainer {
-  width: 90%;
+  width: 100%;
 }
 
 li {
@@ -116,8 +125,8 @@ li > a {
 }
 
 .menuList ul {
-  padding-left: 1em;
-
+  /* padding-left: 1em; */
+  text-align: center;
   @media (min-width: 700px) {
     display: flex;
   }
@@ -264,6 +273,7 @@ form {
   color: rgb(249 115 22);
   text-align: center;
   border-radius: 10px;
+  padding-bottom: 2px;
 }
 
 .serviciiHomePage i {
@@ -280,17 +290,11 @@ form {
   font-size: 30px;
   padding: 35px;
   margin: 5px;
-  border-left: 2px;
-  border-right: 2px;
-  border-top: none;
-  border-bottom: none;
-
-  border-color: rgb(249 115 22);
-  border-left-style: dotted;
-  border-right-style: dotted;
-  border-radius: 100px;
+  border: 2px solid rgb(249 115 22);
+  border-radius: 15px;
 }
 
 .footerNameAndNumber {
   padding-top: 20px;
+  width: 100%;
 }
