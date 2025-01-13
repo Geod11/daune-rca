@@ -26,6 +26,7 @@ body {
 .menuList {
   /* width: 23em; */
   /* display: none; */
+  width: 100%;
   list-style-type: none;
   background-color: black;
   border-radius: 0px 0px 15px 15px;
@@ -35,6 +36,7 @@ body {
   margin: 0;
   /* margin-top: -10px; */
   padding: 10px 0px;
+  justify-content: center;
 }
 
 .orangeText {
@@ -123,6 +125,11 @@ li > a {
 
 .nameAndNumber p {
   margin: 0;
+}
+
+.headerLogo {
+  width: 100%;
+  justify-content: center;
 }
 
 .menuList ul {
@@ -304,8 +311,15 @@ form {
   width: 100%;
 }
 
-.quickActionsBar {
+.actionsBarContainer {
   position: fixed;
+  width: 100%;
+  top: 90%;
+}
+
+.quickActionsBar {
+  /* position: fixed; */
+  margin: auto;
   width: 280px;
   height: 60px;
   /* visibility: visible; */
@@ -385,8 +399,15 @@ h3 {
 }
 
 iframe {
+  display: block;
+  margin: auto;
   border: 15px solid black;
   border-radius: 15px;
+  max-width: 600px;
+}
+
+.locationContainer {
+  width: 100%;
 }
 
 .individualMainContainer {
