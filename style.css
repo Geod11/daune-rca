@@ -43,6 +43,12 @@ body {
   /* margin-top: -10px; */
   padding: 10px 0px;
   justify-content: center;
+  word-spacing: 0.5rem;
+  line-height: 1.5rem;
+
+  @media (min-width: 700px) {
+    justify-content: space-around;
+  }
 }
 
 .menuList i {
@@ -64,10 +70,16 @@ body {
   /* margin-left: auto;
   margin-right: auto; */
   text-align: center;
+  text-decoration: none;
 
   @media (min-width: 700px) {
     width: 30%;
   }
+}
+
+.nameAndNumber a {
+  text-decoration: none;
+  color: rgb(249 115 22);
 }
 
 .boldText {
@@ -365,6 +377,9 @@ form {
   );
   align-items: center;
   justify-content: center;
+  @media (min-width: 700px) {
+    display: none;
+  }
 }
 
 .quickActionsBar a {
@@ -393,7 +408,7 @@ form {
   text-decoration: none;
 }
 
-.chatButton {
+.emailButton {
   text-decoration: none;
 }
 
@@ -403,6 +418,12 @@ form {
   border-radius: 15px;
   margin: 15px auto;
   max-width: 700px;
+
+  @media (min-width: 1024px) {
+    font-size: 20px;
+
+    max-width: 1100px;
+  }
 }
 
 .servicesContentContainer h2 {
@@ -424,6 +445,14 @@ form {
   margin: 15px auto;
   width: 100%;
   max-width: 700px;
+
+  @media (min-width: 850px) {
+    display: flex;
+    margin-top: 15px;
+    max-width: none;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+  }
 }
 
 .mainContactContent h2,
@@ -434,13 +463,27 @@ h3 {
 iframe {
   display: block;
   margin: auto;
-  border: 15px solid black;
+  /* border: 15px solid black; */
   border-radius: 15px;
-  max-width: 600px;
+  margin-right: 15px;
+  /* width: -webkit-fill-available; */
+  height: 100%;
+
+  @media (min-width: 850px) {
+    max-width: 600px;
+    /* height: 500px; */
+    margin: 0;
+    /* margin-left: 15px; */
+    width: 96%;
+    justify-self: center;
+    float: right;
+  }
 }
 
 .locationContainer {
-  width: 100%;
+  @media (min-width: 850px) {
+    width: 600px;
+  }
 }
 
 .individualMainContainer {
