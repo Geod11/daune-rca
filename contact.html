@@ -93,9 +93,9 @@
         </div>
 
         <form id="form1">
-          <h2>AI FOST IMPLICAT ÎNTR-UN ACCIDENT RUTIER?</h2>
+          <h2>AI FOST IMPLICAT INTR-UN ACCIDENT RUTIER?</h2>
           <p class="boldText orangeText">0742 99 77 11</p>
-          <h3>Trimite un mesaj și în cel mai scurt timp vă contactăm</h3>
+          <h3>Trimiteți un mesaj și în cel mai scurt timp vă contactăm</h3>
           <div class="gridContainer">
             <div class="item1">
               <input class="inputFields" type="text" placeholder="Nume" />
@@ -104,13 +104,34 @@
               <input class="inputFields" type="text" placeholder="Prenume" />
             </div>
             <div class="item3">
-              <input class="inputFields" type="text" placeholder="Email" />
+              <input
+                class="inputFields"
+                type="email"
+                placeholder="Email"
+                required
+                oninvalid="setCustomValidity('Tastați o adresă de email validă'), setCustomValidity('Tastați o adresă de email validă')"
+                oninput="setCustomValidity('')"
+              />
             </div>
             <div class="item4">
-              <input class="inputFields" type="text" placeholder="Telefon" />
+              <input
+                class="inputFields"
+                type="tel"
+                placeholder="Telefon"
+                pattern="[0-9]{4}[0-9]{3}[0-9]{3}"
+                required
+                oninvalid="setCustomValidity('Tastați un număr de telefon valid')"
+                oninput="setCustomValidity('')"
+              />
             </div>
             <div class="item5">
-              <textarea class="inputFields" placeholder="Mesaj"></textarea>
+              <textarea
+                class="inputFields"
+                placeholder="Mesaj"
+                required
+                oninvalid="setCustomValidity('Care este mesajul pe care vreți să îl transmiteți?')"
+                oninput="setCustomValidity('')"
+              ></textarea>
             </div>
             <div class="item6">
               <button

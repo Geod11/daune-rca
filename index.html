@@ -90,13 +90,34 @@
               <input class="inputFields" type="text" placeholder="Prenume" />
             </div>
             <div class="item3">
-              <input class="inputFields" type="text" placeholder="Email" />
+              <input
+                class="inputFields"
+                type="email"
+                placeholder="Email"
+                required
+                oninvalid="setCustomValidity('Tastați o adresă de email validă')"
+                oninput="setCustomValidity('')"
+              />
             </div>
             <div class="item4">
-              <input class="inputFields" type="text" placeholder="Telefon" />
+              <input
+                class="inputFields"
+                type="tel"
+                placeholder="Telefon"
+                pattern="[0-9]{4}[0-9]{3}[0-9]{3}"
+                required
+                oninvalid="setCustomValidity('Tastați un număr de telefon valid')"
+                oninput="setCustomValidity('')"
+              />
             </div>
             <div class="item5">
-              <textarea class="inputFields" placeholder="Mesaj"></textarea>
+              <textarea
+                class="inputFields"
+                placeholder="Mesaj"
+                required
+                oninvalid="setCustomValidity('Care este mesajul pe care vreți să îl transmiteți?')"
+                oninput="setCustomValidity('')"
+              ></textarea>
             </div>
             <div class="item6">
               <button
@@ -111,75 +132,81 @@
           </div>
         </form>
         <div class="insurersAndServices">
-          <h2>La ce asigurator ai dauna?</h2>
+          <h2>La ce asigurator ai daună?</h2>
 
-          <div>
-            <img src="./images/Omniasig.jpg" />
-            <button>
-              <a href="./omniasig.html" target="_self">Selectează</a>
-            </button>
-          </div>
-          <div>
-            <img src="./images/FonduldeGarantareAAsiguratilor.jpg" />
-            <button><a href="./fga.html" target="_self">Selectează</a></button>
-          </div>
-          <div>
-            <img src="./images/HellasDirect.jpg" />
-            <button>
-              <a href="./hellas.html" target="_self">Selectează</a>
-            </button>
-          </div>
-          <div>
-            <img src="./images/AXERIA.jpg" />
-            <button>
-              <a href="./axeria.html" target="_self">Selectează</a>
-            </button>
-          </div>
-          <div>
-            <img src="./images/GARANTA.jpg" />
-            <button>
-              <a href="./garanta.html" target="_self">Selectează</a>
-            </button>
-          </div>
-          <div>
-            <img src="./images/GRAWE.jpg" />
-            <button>
-              <a href="./grawe.html" target="_self">Selectează</a>
-            </button>
-          </div>
-          <div>
-            <img src="./images/Uniqua.jpg" />
-            <button>
-              <a href="./uniqua.html" target="_self">Selectează</a>
-            </button>
-          </div>
-          <div>
-            <img src="./images/Baar.jpg" />
-            <button><a href="./baar.html" target="_self">Selectează</a></button>
-          </div>
-          <div>
-            <img src="./images/ASIROM.jpg" />
-            <button>
-              <a href="./asirom.html" target="_self">Selectează</a>
-            </button>
-          </div>
-          <div>
-            <img src="./images/Allianz.jpg" />
-            <button>
-              <a href="./allianz.html" target="_self">Selectează</a>
-            </button>
-          </div>
-          <div>
-            <img src="./images/groupama-logo-good.jpg" />
-            <button>
-              <a href="./groupama.html" target="_self">Selectează</a>
-            </button>
-          </div>
-          <div>
-            <img src="./images/Generali.jpg" />
-            <button>
-              <a href="./generali.html" target="_self">Selectează</a>
-            </button>
+          <div class="insuranceCardsContainer">
+            <div>
+              <img src="./images/Omniasig.jpg" />
+              <button>
+                <a href="./omniasig.html" target="_self">Selectează</a>
+              </button>
+            </div>
+            <div>
+              <img src="./images/FonduldeGarantareAAsiguratilor.jpg" />
+              <button>
+                <a href="./fga.html" target="_self">Selectează</a>
+              </button>
+            </div>
+            <div>
+              <img src="./images/HellasDirect.jpg" />
+              <button>
+                <a href="./hellas.html" target="_self">Selectează</a>
+              </button>
+            </div>
+            <div>
+              <img src="./images/AXERIA.jpg" />
+              <button>
+                <a href="./axeria.html" target="_self">Selectează</a>
+              </button>
+            </div>
+            <div>
+              <img src="./images/GARANTA.jpg" />
+              <button>
+                <a href="./garanta.html" target="_self">Selectează</a>
+              </button>
+            </div>
+            <div>
+              <img src="./images/GRAWE.jpg" />
+              <button>
+                <a href="./grawe.html" target="_self">Selectează</a>
+              </button>
+            </div>
+            <div>
+              <img src="./images/Uniqua.jpg" />
+              <button>
+                <a href="./uniqua.html" target="_self">Selectează</a>
+              </button>
+            </div>
+            <div>
+              <img src="./images/Baar.jpg" />
+              <button>
+                <a href="./baar.html" target="_self">Selectează</a>
+              </button>
+            </div>
+            <div>
+              <img src="./images/ASIROM.jpg" />
+              <button>
+                <a href="./asirom.html" target="_self">Selectează</a>
+              </button>
+            </div>
+            <div>
+              <img src="./images/Allianz.jpg" />
+              <button>
+                <a href="./allianz.html" target="_self">Selectează</a>
+              </button>
+            </div>
+            <div>
+              <img src="./images/groupama-logo-good.jpg" />
+              <button>
+                <a href="./groupama.html" target="_self">Selectează</a>
+              </button>
+            </div>
+            <div>
+              <img src="./images/Generali.jpg" />
+              <button>
+                <a href="./generali.html" target="_self">Selectează</a>
+              </button>
+            </div>
           </div>
         </div>
       </div>
