@@ -107,7 +107,7 @@ a {
   left: 30px;
   text-align: center; */
 
-  top: 9%;
+  top: 7%;
   left: 91%;
   transform: translate(-50%, -50%);
 
@@ -262,7 +262,7 @@ form {
     rgb(249 115 22),
     rgb(156 163 175)
   );
-  color: black;
+  color: white;
   font-size: 20px;
 }
 
